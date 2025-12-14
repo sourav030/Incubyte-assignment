@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../context/AuthContext";
+import { Link } from "react-router-dom";
 
 const ManageSweets = () => {
   const { sweets, token, fetchSweets } = useContext(AuthContext);
 
- 
+
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete this sweet?")) return;
     try {
@@ -33,11 +34,11 @@ const ManageSweets = () => {
       const config = { headers: { Authorization: `Bearer ${token}` } };
       // Backend API call: POST /restock
       await axios.post(
-        `http://localhost:5000/api/sweets/${id}/restock`, 
-        { quantity: amount }, 
+        `http://localhost:5000/api/sweets/${id}/restock`,
+        { quantity: amount },
         config
       );
-      
+
       alert(`Stock updated! Added ${amount}kg.`);
       fetchSweets(); // Refresh UI
 
@@ -72,22 +73,22 @@ const ManageSweets = () => {
                     <img src={sweet.imageUrl} alt="" className="h-10 w-10 rounded-full object-cover border mr-3" />
                     <span className="font-medium text-gray-900">{sweet.name}</span>
                   </td>
-                  
+
                   {/* Price */}
                   <td className="px-6 py-4 whitespace-nowrap font-semibold text-gray-700">₹{sweet.price}</td>
-                  
+
                   {/* Stock with Color Code */}
                   <td className="px-6 py-4 whitespace-nowrap">
                     <span className={`px-2 py-1 rounded-full text-xs font-bold ${sweet.quantity < 5 ? 'bg-red-100 text-red-800' : 'bg-green-100 text-green-800'}`}>
                       {sweet.quantity} kg
                     </span>
                   </td>
-                  
+
                   {/* ACTIONS: Restock & Delete */}
                   <td className="px-6 py-4 whitespace-nowrap text-center space-x-2">
-                    
+
                     {/* RESTOCK BUTTON */}
-                    <button 
+                    <button
                       onClick={() => handleRestock(sweet._id, sweet.quantity)}
                       className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition text-sm font-semibold shadow"
                     >
@@ -95,12 +96,16 @@ const ManageSweets = () => {
                     </button>
 
                     {/* DELETE BUTTON */}
-                    <button 
+                    <button
                       onClick={() => handleDelete(sweet._id)}
                       className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition text-sm font-semibold shadow"
                     >
                       Delete
                     </button>
+                      {/* NEW: EDIT BUTTON */}
+                      <Link to={`/admin/edit-sweet/${sweet._id}`} className="bg-yellow-500 text-white px-3 py-1.5 rounded hover:bg-yellow-600 transition text-sm font-semibold shadow inline-block">
+                        Edit
+                      </Link>
                   </td>
                 </tr>
               ))}
