@@ -87,7 +87,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-500">
           <p>© {new Date().getFullYear()} Sweet Shop Management System. All rights reserved.</p>
           <p className="mt-1">
-            Made with ❤️ by <span className="text-pink-400 font-bold">Your Name</span>
+            Made with ❤️ by <span className="text-pink-400 font-bold">Sourav Kumar Tiwari</span>
           </p>
         </div>
 
