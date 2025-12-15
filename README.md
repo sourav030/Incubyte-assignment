@@ -65,32 +65,5 @@ npm run dev
 
 
 
-## Project Screenshots
 
-<div align="center">
   
-  <h3>1. Homepage</h3>
-  <img src="./screenshots/Homepage.jpg" alt="Homepage" width="700" />
-  <br/><br/>
-
-  <h3>2. Login Page</h3>
-  <img src="./screenshots/login.jpg" alt="Login Page" width="700" />
-  <br/><br/>
-
-  <h3>3. Cart Section</h3>
-  <img src="./screenshots/cart.jpg" alt="Cart" width="700" />
-  <br/><br/>
-
-  <h3>4. Checkout Page</h3>
-  <img src="./screenshots/Checkout.jpg" alt="Checkout" width="700" />
-  <br/><br/>
-
-  <h3>5. Admin Dashboard</h3>
-  <img src="./screenshots/Admin.jpg" alt="Admin" width="700" />
-
-</div>
-### 4. Checkout Page
-![Checkout](./screenshots/Checkout.jpg)
-
-### 5. Admin Dashboard
-![Admin Dashboard](./screenshots/Admin.jpg)
