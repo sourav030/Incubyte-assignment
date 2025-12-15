@@ -44,7 +44,7 @@ Follow these steps to run the project locally.
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/Sweet-Shop-Management.git](https://github.com/YOUR_USERNAME/Sweet-Shop-Management.git)
+git clone https://github.com/sourav030/Incubyte-assignment/tree/main
 
 
 For Backend Step
@@ -67,4 +67,3 @@ npm run dev
 
 
 
-![alt text](cart.jpg) ![alt text](login.jpg) ![alt text](Admin.jpg) ![alt text](Checkout.jpg) ![alt text](Homepage.jpg)
