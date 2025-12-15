@@ -64,3 +64,7 @@ npm install
 npm run dev
 
 
+
+
+
+![alt text](cart.jpg) ![alt text](login.jpg) ![alt text](Admin.jpg) ![alt text](Checkout.jpg) ![alt text](Homepage.jpg)
