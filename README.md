@@ -65,5 +65,21 @@ npm run dev
 
 
 
+## Project Screenshots
 
+Here are some glimpses of the Sweet Shop Management System:
 
+### 1. Homepage
+![Homepage](./screenshots/Homepage.jpg)
+
+### 2. Login Page
+![Login Page](./screenshots/login.jpg)
+
+### 3. Cart Section
+![Cart](./screenshots/cart.jpg)
+
+### 4. Checkout Page
+![Checkout](./screenshots/Checkout.jpg)
+
+### 5. Admin Dashboard
+![Admin Dashboard](./screenshots/Admin.jpg)
